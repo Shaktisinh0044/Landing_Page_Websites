@@ -2,7 +2,7 @@
 
 Welcome to the GameWeb Landing Page – a modern, responsive, and visually appealing website designed for showcasing games or gaming platforms.
 
-🔗 **Live Demo**: [Click Here to View](https://shaktisinh0044.github.io/Landing_Page_Websites/GameWeb-Landing-Page/)
+🔗 **Live Demo**: [Click Here to View](https://shaktisinh0044.github.io/Landing_Page_Websites/GameWeb_Landing_Page/)
 
 ## 🚀 Features
 
