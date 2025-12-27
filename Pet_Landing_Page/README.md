@@ -5,7 +5,7 @@ users learn more about adopting pets and encourages them to take action with a v
 <br> Responsive File Not Added ! Update Soon <br>
 
 
-🌐 **Live Demo**: [Click Here](https://shaktisinh0044.github.io/Pet_Landing_Page/)
+🌐 **Live Demo**: [Click Here](https://shaktisinh0044.github.io/Landing_Page_Websites/Pet_Landing_Page/)
 
 ---
 
