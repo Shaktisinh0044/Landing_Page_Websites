@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+
+.container {
+  height: 100vh;
+  background-color: rgb(233, 233, 233);
+  position: relative;
+  isolation: isolate;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  width: 85%;
+  margin: auto;
+  border-bottom: 1px solid black;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.navlist {
+  display: flex;
+  gap: 40px;
+}
+
+.navlist li {
+  list-style: none;
+}
+
+.navlist a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.navlist a:hover {
+  color: red;
+}
+
+.navlist .fa-solid {
+  font-size: 20px;
+}
+
+.container::before {
+  content: "NIKE";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 450px;
+  font-family: "Bangers", system-ui;
+  letter-spacing: 20px;
+  color: rgb(199, 199, 199);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.shoes img {
+  height: 450px;
+  rotate: -10deg;
+  animation: shoes 4s infinite ease-in-out;
+}
+
+.hero {
+  height: 85vh;
+  display: flex;
+  width: 85%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content h1 {
+  font-family: "Bangers", system-ui;
+  color: black;
+  font-size: 100px;
+  letter-spacing: 5px;
+}
+
+.content p {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 80%;
+}
+
+.content button {
+  border: none;
+  background-color: #fa2e05;
+  padding: 17px 30px;
+  font-size: 18px;
+  color: white;
+}
+
+.content button:hover {
+  background-color: rgb(0, 106, 255);
+}
+
+.content .line {
+  width: 40%;
+  height: 8px;
+  background-color: #fa2e05;
+  margin: 15px 0px;
+  border-radius: 10px;
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  gap: 25px;
+  background-color: rgb(0, 106, 255);
+  padding: 50px 10px;
+  border-radius: 50px;
+}
+
+.icons .fa-brands {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.shoes {
+  position: relative;
+}
+
+.shoes::before {
+  content: "";
+  background-image: url(shoes.png);
+  background-size: 300%;
+  background-position: bottom left;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(203, 203, 203);
+  animation: move 2s infinite linear;
+}
+
+.shoes::after {
+  animation: move 2s infinite linear;
+  content: "";
+  background-image: url(shoes.png);
+  background-size: 300%;
+  background-position: top;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  border-radius: 50%;
+  border: 1px solid rgb(203, 203, 203);
+}
+
+@keyframes shoes {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(0.99);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
