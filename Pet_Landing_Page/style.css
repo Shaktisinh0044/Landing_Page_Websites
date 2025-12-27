@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Praise&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+:root {
+  --white-clr: #fff;
+  --black-clr: #000;
+  --btn-clr: #6c3cd3;
+  --yellow-clr: #edd351;
+  --blue-clr: #60bff4;
+  --light-clr: #8fddf3;
+  --txt-clr: #15073b;
+  --bg-clr: #f5f5f5;
+}
+
+.main-container {
+  min-height: 100vh;
+  background: var(--bg-clr);
+  padding-inline: 4rem;
+}
+.navbar {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.logo {
+  font-size: 2.5rem;
+  color: var(--txt-clr);
+  font-family: "Praise", cursive;
+  margin-right: 4rem;
+}
+button {
+  background: var(--btn-clr);
+  border: none;
+  color: var(--white-clr);
+  border-radius: 5rem;
+}
+button:hover {
+  background: #6421f5;
+}
+.nav-btn {
+  padding: 0.5rem 1.8rem;
+  font-size: 0.95rem;
+}
+
+.navlist {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.navlinks {
+  color: var(--black-clr);
+  font-size: 0.95rem;
+}
+span {
+  font-size: 1rem;
+  color: var(--black-clr);
+  background: var(--yellow-clr);
+  border-radius: 5rem;
+  padding: 0.4rem 1rem;
+  letter-spacing: 0.1rem;
+}
+.content h1 {
+  font-size: 4rem;
+  color: var(--txt-clr);
+  font-family: "Suez One", serif;
+  margin-top: 1.5rem;
+}
+
+.content {
+  max-width: 650px;
+  margin-top: 6rem;
+  margin-left: 5rem;
+}
+
+.hero-section {
+  height: calc(100vh-13vh);
+  display: flex;
+}
+p {
+  font-size: 0.95rem;
+  color: #242424;
+  margin: 1rem 0 1.5rem 0;
+  text-wrap: balance;
+}
+.hero-btn {
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+}
+.design {
+  height: 100%;
+  width: 20rem;
+  background: linear-gradient(var(--blue-clr), var(--light-clr));
+  position: absolute;
+  top: 0;
+  right: 15%;
+}
+.design img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  left: 20%;
+  top: 5%;
+}
+.design::before,
+.design::after {
+  content: "";
+  position: absolute;
+  background: var(--yellow-clr);
+  width: 10rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+.design::before {
+  bottom: 30%;
+  left: -25%;
+  background-image: url(images/bone-toy.png);
+}
+.design::after {
+  top: 25%;
+  right: -40%;
+  background-image: url(images/dog-toy.png);
+}
