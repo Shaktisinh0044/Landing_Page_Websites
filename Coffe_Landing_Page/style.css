@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#page1{
+  height: 100vh;
+  width: 100%;
+  background-color:#3f181c;
+  overflow: hidden;
+}
+#nav{
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  background-color:#3f181c;
+  display: flex;
+  justify-content: space-between;
+}
+#nav #nav1{
+  margin: 20px;
+  color: aliceblue;
+}
+#nav1 h3{
+  font-size: 25px;
+}
+#nav2{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 45px;
+}
+#nav2 a{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 17px;
+}
+#front{
+  position: absolute;
+  display: flex;
+  height: 90%;
+  width: 100%;
+}
+#left{
+  position: relative;
+  height:100%;
+  width: 50%;
+}
+#right{
+  position: relative;
+  height:100%;
+  width: 50%;
+}
+#right img{
+  height: 450px;
+  width: 450px;
+  margin-top: 70px;
+  margin-left: 115px;
+
+}
+#left h1{
+  position: relative;
+  font-family: "Miniver";
+  color: rgb(248, 141, 0);
+  top: 25%;
+  left: 10%;
+  letter-spacing: 2px;
+}
+#left h2{
+  position: relative;
+  color: whitesmoke;
+  width: 60%;
+  top: 25%;
+  left: 10%;
+  margin-top: 19px;
+}
+#left h3{
+  position: relative;
+  color: whitesmoke;
+  width: 78%;
+  top: 25%;
+  left: 10%;
+  font-weight: 100;
+  font-size: 15px;
+  margin-top: 14px;
+}
+#left button{
+  position: relative;
+  top: 30%;
+  left: 9%;
+  margin: 7px;
+  border-radius: 19px;
+  font-weight: 300;
+  padding: 7px 17px 7px 17px;
+  background-color: transparent;
+  border: 1px solid rgb(236, 232, 232);
+  color: aliceblue;
+}
+#left #one{
+  border: 0;
+  background-color:rgb(248, 141, 0);
+  font-weight: 300;
+  color: black;
+}
+#page2{
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color:rgb(0, 0, 0);
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+#page2 #left{
+  height: 100%;
+  width: 50%;
+}
+#page2 #left img{
+  height: 350px;
+  width: 370px;
+  border-radius: 50%;
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  transform: translate(-50%,-50%);
+}
+#page2 #right{
+  height: 100%;
+  width: 50%;
+}
+#page2 #right h1{
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  transform: translate(-50%,-50%);
+}
+#page2 #right #line{
+  height: 5px;
+  width: 130px;
+  background-color: orange;
+  position: absolute;
+  top: 29%;
+  left: 45%;
+  transform: translate(-50%,-50%);
+}
+#page2 #right p{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%,-50%);
+  width:85%
+}
+#page2 .icon{
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+#page2 .icon i{
+  font-size: 27px;
+  margin: 9px;
+}
